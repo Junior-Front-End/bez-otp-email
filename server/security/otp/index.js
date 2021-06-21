@@ -2,6 +2,16 @@ const SibApiV3Sdk = require('sib-api-v3-sdk');
 let defaultClient = SibApiV3Sdk.ApiClient.instance;
 
 
+
+// -----------------------------------------
+//         fill this parameters:
+// -----------------------------------------
+var sendinblue_api_key = '.....'
+var myName = '.....'
+var myEmail = '.....'
+// -----------------------------------------
+
+
 function sendOTPEmail(Email) {
 
   // random 4 digit  
@@ -13,7 +23,7 @@ function sendOTPEmail(Email) {
 
   // transactional email
   let apiKey = defaultClient.authentications['api-key'];
-  apiKey.apiKey = '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';
+  apiKey.apiKey = sendinblue_api_key;
 
   let apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
 
@@ -21,9 +31,9 @@ function sendOTPEmail(Email) {
 
   sendSmtpEmail.subject = "My 2nd subject";
   sendSmtpEmail.htmlContent = `<html><body><h1>code: ${temporary_code}</h1></body></html>`;
-  sendSmtpEmail.sender = {"name":"Junior Front-End","email":"khanim97@gmail.com"};
+  sendSmtpEmail.sender = {"name":"Junior Front-End","email": myEmail};
   sendSmtpEmail.to = [{"email":Email}]; 
-  sendSmtpEmail.replyTo = {"email":"khanim97@gmail.com","name":"Shervin"};
+  sendSmtpEmail.replyTo = {"email": myEmail, "name": myName};
   sendSmtpEmail.headers = {"Some-Custom-Name":"unique-id-1234"};
   sendSmtpEmail.params = {"parameter":"My param value","subject":"New Subject"};
 

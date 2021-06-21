@@ -1,5 +1,9 @@
 # <p dir="rtl">مینی پروژه Nodejs: ثبت نام و ورود با رمز یکبار مصرف</p>
 
+![](https://archive.org/download/bez-otp-email-2/bez-otp-email.png)
+
+[related article in juniorfrontend.ir](https://juniorfrontend.ir/bez-otp-email)
+
 <div dir="rtl">
 
 این ریپوسیتوری به نام  `bez-otp-email` حاصل ادغام دو ریپوسیتوری 
@@ -12,3 +16,4 @@
 همچنین امنیت بالاست. مانند تلگرام که هربار ورود پیامک ارسال میکند.
 
 </div>
+

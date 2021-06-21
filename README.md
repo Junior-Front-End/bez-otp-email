@@ -2,9 +2,11 @@
 
 ![](https://archive.org/download/bez-otp-email-2/bez-otp-email.png)
 
-[related article in juniorfrontend.ir](https://juniorfrontend.ir/bez-otp-email)
+
 
 <div dir="rtl">
+
+[مقاله مرتبط با این ریپوسیتوری در جونیور فرانت اند](https://juniorfrontend.ir/bez-otp-email)
 
 این ریپوسیتوری به نام  `bez-otp-email` حاصل ادغام دو ریپوسیتوری 
 [bez-ejs](https://github.com/Junior-Front-End/bez-ejs)

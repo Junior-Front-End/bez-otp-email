@@ -1,0 +1,13 @@
+<div style=" margin: 3em">
+
+<form action="/form_otp_email" >
+    <label >ایمیل</label>
+    <br>
+    <input style="direction: ltr" type="email" name="email"> 
+    <br>
+    <br> 
+    <input type="submit" value="ادامه"> 
+    <% if(message !== null){ %> <p><%= message %></p> <% } %>
+</form>
+
+</div>

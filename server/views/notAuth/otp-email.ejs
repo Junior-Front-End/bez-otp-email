@@ -1,0 +1,17 @@
+<div style=" margin: 3em"> 
+    <p>لطفا چهار رقم ارسال شده به ایمیل خود را وارد نمایید!</p>
+    <form action="/api/otp-email" method="POST"> 
+        <input type="email" value="<%= email %>" name="email" hidden>  
+        <input type="number" name="num1" max='9'>  
+        <input type="number" name="num2" max='9'>  
+        <input type="number" name="num3" max='9'>  
+        <input type="number" name="num4" max='9'>   
+        <br><br>
+        <input type="submit" value="ادامه"> 
+
+        <% if(message !== null){ %> 
+            <p><%= message %></p> 
+        <% } %>
+        
+    </form> 
+    </div>
